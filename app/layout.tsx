@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Md Sajidul Mowla - Full-Stack Developer',
-  description: 'Portfolio of Md Sajidul Mowla, a Full-Stack Developer specializing in modern web technologies & ML solutions.',
+  title: 'Md Sajidul Mowla - Software Developer',
+  description: 'Portfolio of Md Sajidul Mowla, a Software Developer specializing in modern web technologies & ML solutions.',
   generator: 'v0.app',
   icons: {
     icon: [
