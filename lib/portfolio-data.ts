@@ -31,47 +31,47 @@ export const aboutData = {
       title: 'Backend Development',
       description: 'Creating robust APIs and server-side solutions with Node.js and modern frameworks.',
     },
-    // {
-    //   icon: 'Smartphone',
-    //   title: 'Mobile Development',
-    //   description: 'Professional development of mobile applications with React Native and modern tools.',
-    // },
+    {
+      icon: 'Smartphone',
+      title: 'Mobile Development',
+      description: 'Professional development of mobile applications with React Native and modern tools.',
+    },
     {
       icon: 'BrainCircuit',
       title: 'Machine Learning',
       description: 'Creating AI/ML solutions like classifier, RAG pipeline, Data analysis with latest tools and frameworks.',
     },
   ],
-  testimonials: [
-    {
-      avatar: '/professional-man.jpg',
-      name: 'Daniel Lewis',
-      text: 'John was hired to create a corporate identity. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.',
-    },
-    {
-      avatar: '/professional-woman-diverse.png',
-      name: 'Jessica Miller',
-      text: 'John was hired to create a corporate identity. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.',
-    },
-    {
-      avatar: '/professional-man.jpg',
-      name: 'Michael Chen',
-      text: 'Outstanding work! John delivered a high-quality product that exceeded our expectations. His attention to detail is remarkable.',
-    },
-    {
-      avatar: '/professional-woman-diverse.png',
-      name: 'Sarah Johnson',
-      text: 'Professional, creative, and highly skilled. John is the developer you want on your team for any complex project.',
-    },
-  ],
-  clients: [
-    { name: 'TechCorp', logo: '/tech-company-logo.jpg' },
-    { name: 'StartupHub', logo: '/startup-logo.png' },
-    { name: 'DesignStudio', logo: '/design-agency-logo.png' },
-    { name: 'CodeLabs', logo: '/software-company-logo.png' },
-    { name: 'WebSolutions', logo: '/web-agency-logo.jpg' },
-    { name: 'AppMakers', logo: '/app-development-logo.jpg' },
-  ],
+  // testimonials: [
+  //   {
+  //     avatar: '/professional-man.jpg',
+  //     name: 'Daniel Lewis',
+  //     text: 'John was hired to create a corporate identity. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.',
+  //   },
+  //   {
+  //     avatar: '/professional-woman-diverse.png',
+  //     name: 'Jessica Miller',
+  //     text: 'John was hired to create a corporate identity. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.',
+  //   },
+  //   {
+  //     avatar: '/professional-man.jpg',
+  //     name: 'Michael Chen',
+  //     text: 'Outstanding work! John delivered a high-quality product that exceeded our expectations. His attention to detail is remarkable.',
+  //   },
+  //   {
+  //     avatar: '/professional-woman-diverse.png',
+  //     name: 'Sarah Johnson',
+  //     text: 'Professional, creative, and highly skilled. John is the developer you want on your team for any complex project.',
+  //   },
+  // ],
+  // clients: [
+  //   { name: 'TechCorp', logo: '/tech-company-logo.jpg' },
+  //   { name: 'StartupHub', logo: '/startup-logo.png' },
+  //   { name: 'DesignStudio', logo: '/design-agency-logo.png' },
+  //   { name: 'CodeLabs', logo: '/software-company-logo.png' },
+  //   { name: 'WebSolutions', logo: '/web-agency-logo.jpg' },
+  //   { name: 'AppMakers', logo: '/app-development-logo.jpg' },
+  // ],
 }
 
 export const resumeData = {
@@ -96,29 +96,47 @@ export const resumeData = {
         'Leading development of scalable web applications using React, Node.js, and cloud technologies. Learning from industry experts and implementing best practices.',
     }
   ],
-  // skills: [
-  //   { name: 'Web Design', level: 90 },
-  //   { name: 'Frontend Development', level: 95 },
-  //   { name: 'Backend Development', level: 85 },
-  //   { name: 'Database Design', level: 80 },
-  // ],
   skills: [
-    {group: 'Machine Learning', items: ['Python', 'PyTorch', 'scikit-learn', 'Pandas']},
-    {group: 'Frontend', items: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Ant Design']},
-    {group: 'Backend', items: ['Node.js', 'Express.js', 'FastAPI', 'RESTful APIs']},
-    {group: 'Databases', items: ['MongoDB', 'PostgreSQL', 'Firebase']},
-    {group: 'Programming Language', items: ['C', 'C++', 'JavaScript', 'TypeScript', 'Python', 'SQL']},
-    {group: 'Tools & Platforms', items: ['Git', 'Github', 'Notion', 'n8n']},
+    { group: 'Machine Learning', icon: '🤖', items: ['Python', 'PyTorch', 'scikit-learn', 'Pandas'] },
+    { group: 'Frontend', icon: '🎨', items: ['React.js', 'Next.js', 'React Native', 'TypeScript', 'Tailwind CSS', 'Ant Design'] },
+    { group: 'Backend', icon: '⚙️', items: ['Node.js', 'Express.js', 'FastAPI', 'RESTful APIs'] },
+    { group: 'Databases', icon: '🗄️', items: ['MongoDB', 'PostgreSQL'] },
+    { group: 'Programming Language', icon: '💻', items: ['JavaScript', 'TypeScript', 'Python', 'SQL'] },
+    { group: 'Tools & Platforms', icon: '🛠️', items: ['Git', 'Github', 'Notion', 'n8n'] },
   ]
 }
 
 export const portfolioData = {
-  categories: ['all', 'web development', 'machine learning'],
+  categories: ['all', 'web development', 'machine learning', 'mobile development'],
   projects: [
     {
-      title: 'AviSignt - Bird Species Classifier',
+      title: 'FinTrack - Personal Finance Tracker',
+      category: 'mobile development',
+      description: 'FinTrack is a mobile-based personal finance tracking and expense management application built with React Native (Expo), designed to help users monitor spending, manage budgets, and gain insights into their financial habits.',
+      tech: [
+        'react native',
+        'expo',
+        'expo router',
+        'node.js',
+        'express.js',
+        'neon database',
+        'upstash redis',
+        'clerk auth'
+      ],
+      liveUrl: '',
+      githubUrl: 'https://github.com/sajid73/Personal-Finance-Tracker',
+    },
+    {
+      title: 'Chiropractice Clinic Management System',
+      category: 'web development',
+      description: 'This is a full stack project build for real clinic in USA. The project was a team collaboration. This project helped the clinic to manage their staffs, daily task easier, keeping track of patients with their insurance info and codes.',
+      tech: ['React.js', 'Express.js', 'Mongodb', 'Mongoose', 'TinyMCE'],
+      liveUrl: '',
+      githubUrl: 'https://github.com/sajid73/careplan-frontend',
+    },
+    {
+      title: 'AviSight - Bird Species Classifier',
       category: 'machine learning',
-      image: '/modern-ecommerce-website.png',
       description: 'A comparative analysis of bird species classification and an UI to classify birds. The models were trained on dataset publicly available on Kaggle. The UI was designed to classify birds based on an uploaded image.',
       tech: ['Python', 'Tensorflow', 'Streamlit UI', 'VGG16', 'ResNet50'],
       liveUrl: '',
@@ -127,7 +145,6 @@ export const portfolioData = {
     {
       title: 'PayPredict - Salary Prediction System',
       category: 'machine learning',
-      image: '/modern-ecommerce-website.png',
       description: 'Aninterface for predicting salary in tech industry. Based on profession, country, and years of experience this system will give an estimate salary. The system is built using machine learning based on Stack Overflow data.',
       tech: ['Python', 'Streamlit UI', 'scikit-learn', 'Pandas'],
       liveUrl: '',
@@ -136,7 +153,6 @@ export const portfolioData = {
     {
       title: 'JoruriDoctor - Telemedicine System',
       category: 'web development',
-      image: '/modern-ecommerce-website.png',
       description: 'A full-stack project focusing on emergency expert medical access to remote people.',
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io'],
       liveUrl: '',
@@ -145,7 +161,6 @@ export const portfolioData = {
     {
       title: 'EventEase - Event Management Platform',
       category: 'web development',
-      image: '/modern-ecommerce-website.png',
       description: 'A software platform designed to manage and coordinate the different events held within a university.',
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io'],
       liveUrl: '',
@@ -154,13 +169,12 @@ export const portfolioData = {
     {
       title: 'SmartBusDesk - Bus Ticket AI helper',
       category: 'machine learning',
-      image: '/modern-ecommerce-website.png',
       description: '• SmartBusDesk: Bus ticket book and QA assistant SmartBusDesk is a bus ticket booking and AI-powered query assistance platform designed to simplify travel management',
       tech: ['streamlit', 'fastapi', 'chromadb', 'langchain'],
       liveUrl: '',
       githubUrl: 'https://github.com/sajid73/SmartBusDesk-AI_ticket_book',
     },
-  ],  
+  ],
 }
 
 export const blogData = {

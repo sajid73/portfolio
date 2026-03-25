@@ -24,7 +24,7 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
             <div key={index} className="relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0">
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
               <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">{item.title}</h4>
-              <p className="text-xs md:text-sm text-accent mb-2">{item.period}</p>
+              {/* <p className="text-xs md:text-sm text-accent mb-2">{item.period}</p> */}
               <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             </div>
           ))}
@@ -42,7 +42,7 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
             <div key={index} className="relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0">
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
               <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">{item.title}</h4>
-              <p className="text-xs md:text-sm text-accent mb-2">{item.period}</p>
+              {/* <p className="text-xs md:text-sm text-accent mb-2">{item.period}</p> */}
               <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             </div>
           ))}
@@ -51,16 +51,24 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
 
       {/* Skills */}
       <div>
-        <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">My Skills</h3>
-        <div className="space-y-3 md:space-y-4">
+        <h3 className="text-xl md:text-2xl font-bold text-foreground mb-8">My Skills</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {data.skills.map((skill, index) => (
-            <div key={index}>
-              <h4 className="text-base md:text-lg font-semibold text-foreground mb-1">{skill.group}</h4>
-              <div className="flex flex-wrap gap-2">
+            <div
+              key={index}
+              className="group relative p-4 rounded-2xl border border-border bg-secondary/30 hover:bg-secondary/60 hover:border-foreground/20 transition-all duration-300"
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-lg">{skill.icon}</span>
+                <h4 className="text-sm font-semibold text-foreground tracking-wide uppercase opacity-70">
+                  {skill.group}
+                </h4>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
                 {skill.items.map((item, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1.5 bg-secondary rounded-full text-xs md:text-sm text-muted-foreground border border-border"
+                    className="px-2.5 py-1 bg-background/70 hover:bg-background rounded-lg text-xs text-foreground/80 border border-border hover:border-foreground/30 hover:text-foreground transition-all duration-200 cursor-default"
                   >
                     {item}
                   </span>
