@@ -193,7 +193,7 @@ export const blogData = {
 }
 
 export const contactData = {
-  email: 'smsajid7300.com',
+  email: 'smsajid7300@gmail.com',
   phone: '+8801859368074',
   location: 'Halishahar, Chattogram, Bangladesh',
   mapEmbedUrl:
