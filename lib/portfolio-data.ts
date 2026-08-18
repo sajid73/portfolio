@@ -90,10 +90,18 @@ export const resumeData = {
   ],
   experience: [
     {
-      title: 'Software Engineer Intern',
-      period: 'September 2023 — October 2023',
+      title: 'Software Engineer',
+      period: 'August 2026 — Present',
+      company: 'Chittagong Port Authority (CPA)',
       description:
-        'Leading development of scalable web applications using React, Node.js, and cloud technologies. Learning from industry experts and implementing best practices.',
+        'Working on software engineering and testing to ensure quality and reliability of applications. Contributing to development and QA processes.',
+    },
+    {
+      title: 'Software Engineer',
+      period: 'April 2026 — August 2026',
+      company: 'Summit Alliance Port Limited (SAPL)',
+      description:
+        'Contributed to maintaining and implementing features in the ERP system. Assisted in developing backend APIs and business logic for ERP workflows. Helped resolve production issues and improve existing ERP functionality. Worked with SQL queries for ERP data management. Developed an internal code generation tool to automate repetitive development tasks.',
     }
   ],
   skills: [

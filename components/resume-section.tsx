@@ -41,8 +41,11 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
           {data.experience.map((item, index) => (
             <div key={index} className="relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0">
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
-              <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">{item.title}</h4>
-              {/* <p className="text-xs md:text-sm text-accent mb-2">{item.period}</p> */}
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-2 mb-3">
+                <h4 className="text-base md:text-lg font-semibold text-foreground">{item.title}</h4>
+                <p className="text-xs md:text-sm text-accent font-medium">{item.company}</p>
+              </div>
+              <p className="text-xs md:text-sm text-muted-foreground mb-3">{item.period}</p>
               <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             </div>
           ))}
